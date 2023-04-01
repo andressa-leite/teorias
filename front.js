@@ -161,4 +161,28 @@ EVENT LOOP
 https://miro.medium.com/max/1400/1*XVqPA2z1dTHJWm2TwIAsBw.gif
 
 https://www.youtube.com/watch?v=6WYEmUVhiwQ
+
+
+PERGUNTAS REACT
+
+Por que classname é usado no lugar de class?
+	Porque class é uma palavra chave reservada do Javascript.Então o Javascript pensa que vc está tentando criar uma classe Javascript e não estilizar um elemento.
+	Por essa razão a class é className em JSX.
+
+Descreva Fluxo de dados em React:
+	o Fluxo de dados é unidirecional, ou seja, todos os componentes em React 
+	tem um relacionamento pai-filho e normalmente o que acontece é que passamos
+	os dados de cima para baixo como no caso das props.
+	E para compartilhar dados em profundidade de várias camadas utilizamos 
+	conceitos como o context, global state e redux.
+
+Como você atrasaria uma chamada de API até que um componente fosse "montado"(mounted)?
+	Agora que temos componentes funcionais e hooks, não precisamos mais escrever classes,
+	não precisamos mais do component DidMount... Então... 
+	usamos o UseEffect Hook e passamos um array vazio como segundo argumento 
+	e dentro do UseEffect vc pode escrever o sua chamada de API 
+	e isso funcionará como um component DidMount.
+
+
+
 */
